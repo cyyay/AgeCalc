@@ -10,13 +10,21 @@ body {
 }
 
 .container {
-    background: linear-gradient(135deg, #FFFFFF, #F0F4F8);
-    padding: 40px;
+    background: #FFFFFF;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    width: 80%;
 }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
 
 .container:hover {
     transform: scale(1.02);
@@ -42,8 +50,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
 
 label {
     margin-right: 15px;
@@ -67,11 +76,13 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
     background: linear-gradient(135deg, #00b894, #55efc4);
 }
+
 
 #result {
     margin-top: 30px;
