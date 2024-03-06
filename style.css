@@ -16,86 +16,73 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
+    width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-    p, label, input, button {
-        font-size: 16px;
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 50%;
     }
 }
-
 
 .container:hover {
     transform: scale(1.02);
 }
 
 header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h1 {
     color: #3498db;
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
     color: #555;
 }
 
 .input-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
 }
 
-
 label {
-    margin-right: 15px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
     color: #333;
 }
 
 input {
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 15px;
-    font-size: 18px;
+    padding: 12px 20px;
+    font-size: 16px;
     background: linear-gradient(135deg, #55efc4, #00b894);
     color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    width: auto;
-    max-width: 100%;
 }
 
 button:hover {
     background: linear-gradient(135deg, #00b894, #55efc4);
 }
 
-
 #result {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
     font-size: 16px;
     color: #555;
