@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,12 +16,17 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    width: 80%;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
-    .container {
-        width: 50%;
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    p, label, input, button {
+        font-size: 16px;
     }
 }
 
@@ -51,6 +56,9 @@ p {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
 }
 
 
@@ -61,22 +69,24 @@ label {
 }
 
 input {
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 6px;
     margin-right: 10px;
 }
 
 button {
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 18px;
     background: linear-gradient(135deg, #55efc4, #00b894);
     color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    width: auto;
+    max-width: 100%;
 }
 
 button:hover {
